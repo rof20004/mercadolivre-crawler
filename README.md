@@ -11,7 +11,7 @@ URI base: http://localhost:3000/api
 
 |      Endpoints    |       Método HTTP       |        Corpo da Requisição          |   Parâmetros Obrigatórios  |  Valores Padrão  |
 |-------------------|-------------------------|-------------------------------------|----------------------------|------------------| 
-|  /api/v1/products |         POST            | `{ "search": "Casa", "limit": 20 }` |           `search`         |    `limit = 5`   |
+|    /v1/products   |         POST            | `{ "search": "Casa", "limit": 20 }` |           `search`         |    `limit = 5`   |
 
 
 ## Como executar
