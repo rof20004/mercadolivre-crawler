@@ -16,8 +16,8 @@ URI base: http://localhost:3000/api
 
 ## Como executar
 
-> Comandos executados em sistema baseado em Unix
-> Necessário instalar as ferramentas citadas no item de tecnologias
+> Comandos executados em sistema baseado em Unix.
+> Necessário instalar as ferramentas citadas no item de tecnologias.
 
 a) Clonar o repositório
 - `git clone https://github.com/rof20004/mercadolivre-crawler.git`
