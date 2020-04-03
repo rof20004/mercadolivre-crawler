@@ -61,9 +61,13 @@ const execute = async ({ search, limit = 5 }) => {
 }
 
 const getProductName = html => html.find('.main-title').text().trim();
-const getProductLink = html => html.find('.item__info-link').attr('href').trim();
 const getProductStore = html => html.find('.item__brand-title-tos').text().trim();
-const getProductState = html => html.find('.item__status > .item__condition').text().trim() || html.find('.item__status > .item__title').text().trim();
+const getProductState = html => html.find('.item__status > .item__condition').text().trim() || html.find('.item__status > .item__title').text().trim() || html.find('a > div > div.item__title').text().trim();
+
+const getProductLink = html => {
+    let link = html.find('.item__info-link').attr('href') || html.find('.item__info-title').attr('href');
+    return link.trim();
+};
 
 const getProductPrice = html => {
     let price = html.find('.item__info-link > span').text().replace('R$', '').trim();
